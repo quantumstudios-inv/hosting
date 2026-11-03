@@ -3,184 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codex Hosting | Premium Minecraft Hosting</title>
+    <title>Codex Hosting | Potencia Ilimitada</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navegación / Logo -->
-    <nav>
-        <img src="codexhs-logo.jpg" alt="Codex Hosting Logo" class="nav-logo">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <img src="codexhs-logo.jpg" alt="Codex Studio" class="logo">
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span><span></span><span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#como-funciona">Proceso</a></li>
+                <li><a href="#ventajas">Ventajas</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#" class="btn-client">Panel Pelícan</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- Sección Hero (Estilo TaroHosting) -->
-    <header class="hero">
-        <h1>Hosting Premium para <span class="highlight">Minecraft</span></h1>
-        <p>Tu servidor listo hoy mismo. Alto rendimiento, precios claros y la mejor tecnología.</p>
-        <a href="#planes" class="cta-button">Configura tu Plan</a>
-    </header>
-
-    <!-- Sección de Características (Iconos rápidos) -->
-    <section class="features-bar">
-        <div class="feat"><span>🚀</span> Alto Rendimiento</div>
-        <div class="feat"><span>⚡</span> Instalación Rápida</div>
-        <div class="feat"><span>🐧</span> Panel Pelícan</div>
-        <div class="feat"><span>⏱️</span> Uptime 99.9%</div>
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1 class="fade-in">Domina el juego con <br><span class="highlight">Codex Hosting</span></h1>
+            <p>La infraestructura más robusta del mercado. Servidores optimizados, latencia mínima y el control total en tus manos.</p>
+            <div class="hero-btns">
+                <a href="#planes" class="btn-primary">Explorar Planes</a>
+                <a href="#" class="btn-secondary">Soporte Discord</a>
+            </div>
+        </div>
     </section>
 
-    <!-- Sección de Planes -->
-    <section id="planes" class="pricing-section">
-        <h2 class="section-title">Elige tu <span class="highlight">Plan Ideal</span></h2>
-        
-        <div class="pricing-grid">
+    <!-- SECCIÓN: CÓMO FUNCIONA (Largo) -->
+    <section class="how-it-works" id="como-funciona">
+        <h2 class="section-title">Tu servidor en <span class="highlight">3 Pasos</span></h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Elige tu Plan</h3>
+                <p>Desde el plan Zombie para iniciar, hasta el Leviatan para imperios. Selecciona la RAM y CPU que necesites.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Pago Instantáneo</h3>
+                <p>Procesamos tu pedido en segundos mediante métodos seguros y rápidos.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Despliegue Automático</h3>
+                <p>Recibe tus credenciales del Panel Pelícan y comienza a configurar tu mundo al instante.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: VENTAJAS (Detalladas) -->
+    <section class="advantages" id="ventajas">
+        <h2 class="section-title">¿Por qué <span class="highlight">Codex?</span></h2>
+        <div class="adv-grid">
+            <div class="adv-card">
+                <div class="adv-icon">⚡</div>
+                <h3>Alto Rendimiento</h3>
+                <p>Hardware de última generación con núcleos optimizados para evitar el lag incluso con muchos jugadores.</p>
+            </div>
+            <div class="adv-card">
+                <div class="adv-icon">🚀</div>
+                <h3>Instalación Rápida</h3>
+                <p>Nuestros sistemas de automatización crean tu servidor en menos de 60 segundos tras la compra.</p>
+            </div>
+            <div class="adv-card">
+                <div class="adv-icon">🐧</div>
+                <h3>Panel Pelícan</h3>
+                <p>Gestión intuitiva, acceso a archivos vía SFTP y consolas en tiempo real desde cualquier dispositivo.</p>
+            </div>
+            <div class="adv-card">
+                <div class="adv-icon">🛡️</div>
+                <h3>Uptime 99.9%</h3>
+                <p>Sistemas de redundancia y monitoreo constante para que tu servidor nunca esté fuera de línea.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: PLANES -->
+    <section class="pricing" id="planes">
+        <h2 class="section-title">Planes de <span class="highlight">Hospedaje</span></h2>
+        <div class="pricing-container">
             <!-- Plan 1 -->
-            <div class="plan-card">
-                <div class="plan-header">
-                    <h3>Zombie</h3>
-                    <p class="plan-tag">Básico</p>
-                </div>
-                <div class="plan-price">$1.50 <span>/mes</span></div>
-                <ul class="plan-specs">
+            <div class="card">
+                <h3>Zombie</h3>
+                <div class="price">$1.50<span>/mes</span></div>
+                <ul class="specs">
                     <li><strong>2 GB</strong> RAM</li>
                     <li><strong>100%</strong> CPU</li>
                     <li><strong>5 GB</strong> Almacenamiento</li>
                 </ul>
-                <a href="#" class="buy-btn">Contratar</a>
+                <a href="#" class="btn-buy">Contratar</a>
             </div>
-
             <!-- Plan 2 -->
-            <div class="plan-card">
-                <div class="plan-header">
-                    <h3>Skeleton</h3>
-                    <p class="plan-tag">Esencial</p>
-                </div>
-                <div class="plan-price">$6.00 <span>/mes</span></div>
-                <ul class="plan-specs">
+            <div class="card">
+                <h3>Skeleton</h3>
+                <div class="price">$6.00<span>/mes</span></div>
+                <ul class="specs">
                     <li><strong>6 GB</strong> RAM</li>
                     <li><strong>200%</strong> CPU</li>
                     <li><strong>20 GB</strong> Almacenamiento</li>
                 </ul>
-                <a href="#" class="buy-btn">Contratar</a>
+                <a href="#" class="btn-buy">Contratar</a>
             </div>
-
             <!-- Plan 3 -->
-            <div class="plan-card">
-                <div class="plan-header">
-                    <h3>Spider</h3>
-                    <p class="plan-tag">Recomendado</p>
-                </div>
-                <div class="plan-price">$10.00 <span>/mes</span></div>
-                <ul class="plan-specs">
+            <div class="card">
+                <h3>Spider</h3>
+                <div class="price">$10.00<span>/mes</span></div>
+                <ul class="specs">
                     <li><strong>10 GB</strong> RAM</li>
                     <li><strong>300%</strong> CPU</li>
                     <li><strong>40 GB</strong> Almacenamiento</li>
                 </ul>
-                <a href="#" class="buy-btn">Contratar</a>
+                <a href="#" class="btn-buy">Contratar</a>
             </div>
-
             <!-- Plan 4 -->
-            <div class="plan-card">
-                <div class="plan-header">
-                    <h3>Enderman</h3>
-                    <p class="plan-tag">Avanzado</p>
-                </div>
-                <div class="plan-price">$16.00 <span>/mes</span></div>
-                <ul class="plan-specs">
+            <div class="card">
+                <h3>Enderman</h3>
+                <div class="price">$16.00<span>/mes</span></div>
+                <ul class="specs">
                     <li><strong>16 GB</strong> RAM</li>
                     <li><strong>400%</strong> CPU</li>
                     <li><strong>60 GB</strong> Almacenamiento</li>
                 </ul>
-                <a href="#" class="buy-btn">Contratar</a>
+                <a href="#" class="btn-buy">Contratar</a>
             </div>
-
             <!-- Plan 5 -->
-            <div class="plan-card">
-                <div class="plan-header">
-                    <h3>Blaze</h3>
-                    <p class="plan-tag">Potente</p>
-                </div>
-                <div class="plan-price">$20.00 <span>/mes</span></div>
-                <ul class="plan-specs">
+            <div class="card">
+                <h3>Blaze</h3>
+                <div class="price">$20.00<span>/mes</span></div>
+                <ul class="specs">
                     <li><strong>20 GB</strong> RAM</li>
                     <li><strong>500%</strong> CPU</li>
                     <li><strong>80 GB</strong> Almacenamiento</li>
                 </ul>
-                <a href="#" class="buy-btn">Contratar</a>
+                <a href="#" class="btn-buy">Contratar</a>
             </div>
-
             <!-- Plan 6 -->
-            <div class="plan-card">
-                <div class="plan-header">
-                    <h3>Wither</h3>
-                    <p class="plan-tag">Elite</p>
-                </div>
-                <div class="plan-price">$24.00 <span>/mes</span></div>
-                <ul class="plan-specs">
+            <div class="card">
+                <h3>Wither</h3>
+                <div class="price">$24.00<span>/mes</span></div>
+                <ul class="specs">
                     <li><strong>24 GB</strong> RAM</li>
                     <li><strong>600%</strong> CPU</li>
                     <li><strong>100 GB</strong> Almacenamiento</li>
                 </ul>
-                <a href="#" class="buy-btn">Contratar</a>
+                <a href="#" class="btn-buy">Contratar</a>
             </div>
-
             <!-- Plan 7 -->
-            <div class="plan-card">
-                <div class="plan-header">
-                    <h3>Ender Dragon</h3>
-                    <p class="plan-tag">Network</p>
-                </div>
-                <div class="plan-price">$32.00 <span>/mes</span></div>
-                <ul class="plan-specs">
+            <div class="card">
+                <h3>Ender Dragon</h3>
+                <div class="price">$32.00<span>/mes</span></div>
+                <ul class="specs">
                     <li><strong>32 GB</strong> RAM</li>
                     <li><strong>800%</strong> CPU</li>
                     <li><strong>150 GB</strong> Almacenamiento</li>
                 </ul>
-                <a href="#" class="buy-btn">Contratar</a>
+                <a href="#" class="btn-buy">Contratar</a>
             </div>
-
             <!-- Plan 8 -->
-            <div class="plan-card">
-                <div class="plan-header">
-                    <h3>Warden</h3>
-                    <p class="plan-tag">Ultra</p>
-                </div>
-                <div class="plan-price">$48.00 <span>/mes</span></div>
-                <ul class="plan-specs">
+            <div class="card">
+                <h3>Warden</h3>
+                <div class="price">$48.00<span>/mes</span></div>
+                <ul class="specs">
                     <li><strong>48 GB</strong> RAM</li>
                     <li><strong>1000%</strong> CPU</li>
                     <li><strong>200 GB</strong> Almacenamiento</li>
                 </ul>
-                <a href="#" class="buy-btn">Contratar</a>
+                <a href="#" class="btn-buy">Contratar</a>
             </div>
-
-            <!-- Plan 9 -->
-            <div class="plan-card featured">
-                <div class="plan-header">
-                    <h3>Leviatan</h3>
-                    <p class="plan-tag">Dios</p>
-                </div>
-                <div class="plan-price">$50.00 <span>/mes</span></div>
-                <ul class="plan-specs">
+            <!-- Plan Final -->
+            <div class="card featured">
+                <div class="badge">Dios</div>
+                <h3>Leviatan</h3>
+                <div class="price">$50.00<span>/mes</span></div>
+                <ul class="specs">
                     <li><strong>Ilimitado</strong> RAM</li>
                     <li><strong>Ilimitado</strong> CPU</li>
                     <li><strong>Ilimitado</strong> Almacenamiento</li>
                 </ul>
-                <a href="#" class="buy-btn">Contratar</a>
+                <a href="#" class="btn-buy">Contratar</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer Estilo Taro -->
-    <footer>
-        <div class="social-container">
-            <a href="#" class="social-link">Discord</a>
-            <a href="#" class="social-link">Facebook</a>
-            <a href="#" class="social-link">Instagram</a>
-            <a href="#" class="social-link">Codex Studio</a>
+    <!-- SECCIÓN: FAQ (Cuestionario largo) -->
+    <section class="faq" id="faq">
+        <h2 class="section-title">Preguntas <span class="highlight">Frecuentes</span></h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h4>¿Cuál es el tiempo de entrega?</h4>
+                <p>La entrega es automática. Una vez confirmado el pago, recibirás el acceso al panel en tu correo electrónico inmediatamente.</p>
+            </div>
+            <div class="faq-item">
+                <h4>¿Puedo migrar mi servidor desde otro hosting?</h4>
+                <p>Sí, nuestro equipo de soporte puede ayudarte a migrar tus archivos y bases de datos de forma gratuita.</p>
+            </div>
+            <div class="faq-item">
+                <h4>¿Qué pasa si necesito más RAM a mitad de mes?</h4>
+                <p>Puedes escalar tu plan en cualquier momento pagando solo la diferencia proporcional al tiempo restante.</p>
+            </div>
+            <div class="faq-item">
+                <h4>¿El almacenamiento es SSD o NVMe?</h4>
+                <p>Utilizamos almacenamiento de estado sólido de alta velocidad para garantizar que la carga de chunks sea instantánea.</p>
+            </div>
+            <div class="faq-item">
+                <h4>¿Tienen protección Anti-DDoS?</h4>
+                <p>Sí, todos nuestros planes incluyen protección Anti-DDoS avanzada para evitar caídas por ataques malintencionados.</p>
+            </div>
         </div>
-        <p class="copy">Codex Studio &copy; 2026 - Todos los derechos reservados</p>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+        <div class="cta-box">
+            <h2>¿Listo para crear tu imperio?</h2>
+            <p>Únete a Codex Hosting y experimenta el verdadero poder.</p>
+            <a href="#planes" class="btn-primary">Ir a los Planes</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-socials">
+            <a href="#">Discord</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Codex Studio</a>
+        </div>
+        <p>&copy; 2026 Codex Hosting. Todos los derechos reservados.</p>
     </footer>
 
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('open');
+        });
+    </script>
 </body>
-</html>
+    </html>
