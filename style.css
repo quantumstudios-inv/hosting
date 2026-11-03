@@ -1,0 +1,176 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+}
+
+body {
+ /* Fondo con desvanecido: Amarillo Neón en el centro, Negro en los bordes */
+ background: radial-gradient(circle at center, #334400 0%, #000 70%);
+ background-attachment: fixed; /* Para que el fondo no se mueva al hacer scroll */
+ color: #fff;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding-bottom: 50px;
+ min-height: 100vh;
+}
+
+header {
+ margin: 40px 0;
+}
+
+.logo {
+ max-width: 250px;
+ height: auto;
+ filter: drop-shadow(0 0 15px #ccff00);
+}
+
+/* Sección de Características */
+.features {
+ display: flex;
+ gap: 20px;
+ flex-wrap: wrap;
+ justify-content: center;
+ margin-bottom: 50px;
+}
+
+.feature-item {
+ background: rgba(17, 17, 17, 0.8); /* Fondo semi-transparente para que se vea el gradiente */
+ border: 1px solid #ccff00;
+ padding: 10px 20px;
+ border-radius: 8px;
+ color: #ccff00;
+ font-weight: 600;
+ box-shadow: 0 0 5px #ccff00;
+ transition: 0.3s;
+ backdrop-filter: blur(5px); /* Efecto de cristal */
+}
+
+.feature-item:hover {
+ background: #ccff00;
+ color: #000;
+}
+
+/* Grid de Planes */
+.pricing-container {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: 25px;
+ width: 90%;
+ max-width: 1200px;
+}
+
+.plan-card {
+ background: rgba(10, 10, 10, 0.9); /* Semi-transparente para integrar con el fondo */
+ border: 2px solid #222;
+ border-radius: 20px;
+ padding: 30px;
+ text-align: center;
+ transition: 0.3s ease-in-out;
+ position: relative;
+ overflow: hidden;
+ backdrop-filter: blur(10px);
+}
+
+.plan-card:hover {
+ border-color: #ccff00;
+ transform: translateY(-10px);
+ box-shadow: 0 0 25px rgba(204, 255, 0, 0.4);
+}
+
+.plan-card h3 {
+ font-size: 1.8rem;
+ margin-bottom: 15px;
+ color: #ccff00;
+ text-transform: uppercase;
+}
+
+.price {
+ font-size: 2.5rem;
+ font-weight: 800;
+ margin-bottom: 20px;
+}
+
+.price span {
+ font-size: 1rem;
+ color: #aaa;
+}
+
+.plan-card ul {
+ list-style: none;
+ margin-bottom: 30px;
+}
+
+.plan-card ul li {
+ margin: 12px 0;
+ color: #ccc;
+ font-size: 1.1rem;
+}
+
+.plan-card ul li strong {
+ color: #fff;
+}
+
+.buy-btn {
+ display: block;
+ text-decoration: none;
+ background: #ccff00;
+ color: #000;
+ padding: 12px;
+ border-radius: 10px;
+ font-weight: 800;
+ text-transform: uppercase;
+ transition: 0.3s;
+}
+
+.buy-btn:hover {
+ background: #fff;
+ box-shadow: 0 0 15px #ccff00;
+}
+
+/* Footer y Redes */
+footer {
+ margin-top: 60px;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.social-links {
+ display: flex;
+ gap: 15px;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.social-btn {
+ text-decoration: none;
+ color: #fff;
+ border: 1px solid #ccff00;
+ padding: 10px 20px;
+ border-radius: 50px;
+ font-size: 0.9rem;
+ transition: 0.3s;
+ background: rgba(0, 0, 0, 0.5);
+}
+
+.social-btn:hover {
+ background: #ccff00;
+ color: #000;
+}
+
+.copyright {
+ margin-top: 30px;
+ font-size: 0.85rem;
+ color: #888;
+ text-align: center;
+ letter-spacing: 1px;
+ transition: 0.3s;
+}
+
+.copyright:hover {
+ color: #ccff00;
+  }
